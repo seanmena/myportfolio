@@ -1,0 +1,241 @@
+.container {
+  width: 100%;
+  max-width: 1500px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+}
+
+/* TOP WORD SECTION */
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.top-wordage {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: [col-1] 50% [col-2] 50%;
+}
+
+.title {
+  font-size: 60px;
+  grid-column: col-1;
+  animation: slide-right 0.7s;
+}
+
+.subtitle {
+  font-size: 20px;
+  padding-bottom: 2%;
+  padding-top: 0;
+  grid-column: col-1;
+  grid-gap: 5px;
+  animation: slide-right 0.9s;
+}
+
+.heading {
+  grid-column: col-1;
+}
+
+.btns {
+  padding-top: 12%;
+  grid-column-start: col-1;
+  /* padding-left: 15px; */
+}
+
+/* PROJECT SECTION */
+
+.p1-txt {
+  padding: 10% 50% 5% 5%;
+  max-width: 100%;
+  color: white;
+}
+.p1-sub {
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+}
+
+.p2-txt {
+  padding: 10% 50% 5% 5%;
+  max-width: 100%;
+  color: white;
+}
+.p2-sub {
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+}
+
+.p3-txt {
+  padding: 10% 50% 5% 5%;
+  max-width: 100%;
+  color: white;
+}
+.p3-sub {
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+}
+
+.p4-txt {
+  padding: 10% 50% 5% 5%;
+  max-width: 100%;
+  color: white;
+}
+.p4-sub {
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+}
+
+/* .projects {
+  width: 100%;
+  max-width: 50%;
+} */
+
+.p-title {
+  font-size: 60px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.ProjectOne {
+  grid-column-start: col-1;
+  grid-row-start: 1;
+  grid-row: span 5;
+  float: left;
+  cursor: pointer;
+  width: 100%;
+  height: 270px;
+  background-image: linear-gradient(#51a979 80%, black);
+}
+
+.ProjectOne:hover {
+  transition: all 0.5s;
+  height: 325px;
+  width: 110%;
+  z-index: 1;
+  position: relative;
+}
+.ProjectTwo {
+  grid-column-start: col-1;
+  float: left;
+  cursor: pointer;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(#5690e3 80%, black);
+}
+
+.ProjectTwo:hover {
+  transition: all 0.5s;
+  height: 325px;
+  width: 110%;
+  z-index: 1;
+}
+
+.ProjectThree {
+  float: right;
+  grid-column-start: col-2;
+  grid-row: 2 / 5;
+  cursor: pointer;
+  width: 100%;
+  height: 270px;
+  background-image: linear-gradient(#7c3d40 80%, black);
+  animation: slide-left 0.7s;
+}
+
+.ProjectThree:hover {
+  transition: all 0.5s;
+  height: 325px;
+  width: 110%;
+  z-index: 1;
+  position: relative;
+}
+
+.Projectfour {
+  float: right;
+  grid-column-start: col-2;
+  grid-row-start: 7;
+  cursor: pointer;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(#7c3bb5 80%, black);
+  animation: slide-left 0.9s;
+}
+
+.Projectfour:hover {
+  transition: all 0.5s;
+  height: 325px;
+  width: 110%;
+  z-index: 1;
+  position: relative;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: [col-1] 50% [col-2] 50%;
+  grid-gap: 5px;
+  grid-auto-rows: 50px;
+  /* grid-template-rows: [r1] 50px [r2] 50px [r3] 50px [r4] 50px [r5] 50px [r6] 50px [r7] 50px; */
+}
+
+/* CONTACT SECTION */
+
+.contact-container {
+  padding-top: 40%;
+}
+
+.email-line {
+  color: white;
+  font-size: 20px;
+}
+
+.c-title {
+  padding-bottom: 2%;
+}
+
+.ld {
+  font-size: 1.75rem;
+  padding: 3%;
+  padding-left: 0;
+}
+
+.gh {
+  font-size: 1.75rem;
+  padding: 3%;
+  padding-left: 0;
+}
+
+.yt {
+  font-size: 1.75rem;
+  padding: 3%;
+  padding-left: 0;
+}
+
+.ig {
+  font-size: 1.75rem;
+  padding: 3%;
+  padding-left: 0;
+}
+
+.icons {
+  padding-top: 1%;
+  cursor: pointer;
+}

@@ -28,6 +28,15 @@
   }
 }
 
+.num {
+  padding-top: 3%;
+  font-size: 1.25rem;
+}
+
+.email {
+  font-size: 2rem;
+}
+
 .top-wordage {
   max-width: 100%;
   display: grid;
@@ -133,6 +142,7 @@
   width: 110%;
   z-index: 1;
   position: relative;
+  letter-spacing: 0.2rem;
 }
 .ProjectTwo {
   grid-column-start: col-1;
@@ -148,6 +158,7 @@
   height: 325px;
   width: 110%;
   z-index: 1;
+  letter-spacing: 0.2rem;
 }
 
 .ProjectThree {
@@ -167,6 +178,7 @@
   width: 110%;
   z-index: 1;
   position: relative;
+  letter-spacing: 0.2rem;
 }
 
 .Projectfour {
@@ -186,6 +198,7 @@
   width: 110%;
   z-index: 1;
   position: relative;
+  letter-spacing: 0.2rem;
 }
 
 .box-container {
@@ -238,4 +251,89 @@
 .icons {
   padding-top: 1%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    display: block;
+  }
+
+  .top-wordage {
+    display: block !important;
+    width: 100%;
+  }
+
+  .ProjectOne {
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(#51a979 80%, black);
+  }
+
+  .ProjectTwo {
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(#5690e3 80%, black);
+  }
+
+  .ProjectThree {
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(#7c3d40 80%, black);
+    animation: slide-left 0.7s;
+  }
+
+  .Projectfour {
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(#7c3bb5 80%, black);
+    animation: slide-left 0.9s;
+  }
+
+  .box-container {
+    display: block;
+    grid-template-columns: [col-1] 50% [col-2] 50%;
+    grid-gap: 5px;
+    grid-auto-rows: 50px;
+    /* grid-template-rows: [r1] 50px [r2] 50px [r3] 50px [r4] 50px [r5] 50px [r6] 50px [r7] 50px; */
+  }
+
+  .ProjectOne:hover {
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 0.2rem;
+  }
+
+  .ProjectTwo:hover {
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 0.2rem;
+  }
+
+  .ProjectThree:hover {
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 0.2rem;
+  }
+
+  .Projectfour:hover {
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 0.2rem;
+  }
 }

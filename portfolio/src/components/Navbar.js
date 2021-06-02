@@ -31,13 +31,16 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img
-            className="navbar-img"
-            alt="sm"
-            src={process.env.PUBLIC_URL + "/img/smlogo.png"}
-          />
-        </Link>
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo">
+            <img
+              onClick={closeMobileMenu}
+              className="navbar-img"
+              alt="sm"
+              src={process.env.PUBLIC_URL + "/img/smlogo.png"}
+            />
+          </Link>
+        </div>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>

@@ -35,3 +35,21 @@
   font-size: 1.5rem;
   color: #ffffff;
 }
+
+.btn3 {
+  background: none;
+  font-weight: 700;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  width: auto;
+  position: relative;
+  text-decoration: underline;
+}
+
+.btn3:hover {
+  opacity: 0.8;
+  color: black;
+}

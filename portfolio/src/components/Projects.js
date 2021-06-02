@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 
 export const ProjectOne = ({ children, type, onClick }) => {
   return (
-    <Link
-      to={{ pathname: "https://github.com/seanmena" }}
-      target="_blank"
-      className="ProjectOne"
-    >
+    <Link to={"/projectone"} className="ProjectOne">
       <div className={`ProjectOne`} onClick={onClick} type={type}>
         <h1 className="p1-txt">Ecommerce Web Site</h1>
         <p className="p1-sub">
@@ -22,11 +18,7 @@ export const ProjectOne = ({ children, type, onClick }) => {
 
 export const ProjectTwo = ({ children, type, onClick }) => {
   return (
-    <Link
-      to={{ pathname: "https://github.com/seanmena" }}
-      target="_blank"
-      className="ProjectTwo"
-    >
+    <Link to={"/projecttwo"} className="ProjectTwo">
       <div className={`ProjectTwo`} onClick={onClick}>
         <h1 className="p2-txt">React Portfolio</h1>
         <p className="p2-sub">
@@ -41,13 +33,9 @@ export const ProjectTwo = ({ children, type, onClick }) => {
 
 export const ProjectThree = ({ children, type, onClick }) => {
   return (
-    <Link
-      to={{ pathname: "https://github.com/seanmena" }}
-      target="_blank"
-      className="ProjectThree"
-    >
+    <Link to={"/projectthree"} className="ProjectThree">
       <div className={`ProjectThree`} onClick={onClick} type={type}>
-        <h1 className="p3-txt">Third Party Api</h1>
+        <h1 className="p3-txt">RESTful Api</h1>
         <p className="p3-sub">
           A collberative Project, Emotional Media Generator uses jQuery to call
           upon third party Api's to retrieve data from the DOM based on user
@@ -61,11 +49,7 @@ export const ProjectThree = ({ children, type, onClick }) => {
 
 export const ProjectFour = ({ children, type, onClick }) => {
   return (
-    <Link
-      to={{ pathname: "https://github.com/seanmena" }}
-      target="_blank"
-      className="Projectfour"
-    >
+    <Link to={"/projectfour"} className="Projectfour">
       <div className={`Projectfour`} onClick={onClick} type={type}>
         <h1 className="p4-txt">Employee Manager</h1>
         <p className="p4-sub">

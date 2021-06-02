@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Footer from "../components/Footer";
-import Button from "../components/Button";
+import { Button, ButtonTwo } from "../components/Button";
 import {
   ProjectFour,
   ProjectOne,
@@ -13,7 +12,9 @@ function Home() {
   return (
     <div className="home-div container">
       <div className="top-wordage">
-        <h1 className="title">Sean Mena</h1>
+        <h1 id="SeanMena" className="title">
+          Sean Mena
+        </h1>
         <h4 className="subtitle">Full-Stack Web Developer</h4>
         <p className="heading">
           When design meets Development. Passionate Full Stack Web Developer--
@@ -24,9 +25,9 @@ function Home() {
           <Button className="btn1">
             GitHub <i class="fas fa-chevron-right"></i>
           </Button>
-          <Button className="btn2">
+          <ButtonTwo className="btn2">
             Linkedin <i class="fas fa-chevron-right"></i>
-          </Button>
+          </ButtonTwo>
         </div>
       </div>
 
@@ -41,21 +42,13 @@ function Home() {
 
       <div className="contact-container">
         <h1 className="c-title">Contact</h1>
-        <p>
+        <p className="email">
           <a className="email-line" href={"mailto: seanmenadev@gmail.com"}>
             SeanMenaDev@gmail.com
           </a>
         </p>
-
-        <div className="icons">
-          <i className="ld fab fa-linkedin" />
-          <i className="gh fab fa-github" />
-          <i className="yt fab fa-youtube" />
-          <i className="ig fab fa-instagram" />
-        </div>
+        <p className="num">(801) 867 - 4854</p>
       </div>
-
-      <Footer />
     </div>
   );
 }

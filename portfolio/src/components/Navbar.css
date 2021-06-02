@@ -15,18 +15,29 @@
   margin: auto;
 }
 
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 1500px;
+  width: 100%;
+}
+
 .navbar-logo {
+  width: 100%;
   color: #fff;
+  justify-self: left;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
   float: left;
-  width: 100%;
-  max-width: 1500px;
   font-size: 1.5rem;
+  align-items: left;
 }
 .navbar-img {
-  max-width: 30px;
-  max-height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .menu-icon {

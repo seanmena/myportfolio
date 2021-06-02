@@ -1,0 +1,161 @@
+.body {
+  font: weight 100px;
+}
+
+.p3-div {
+  max-width: 1500px;
+  height: 100%;
+  background-image: linear-gradient(#7c3d40, black 80%);
+  border-radius: 30px;
+  margin: auto;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-columns: [col-1] 50% [col-2] 50%;
+  grid-gap: 5px;
+  grid-auto-rows: 50px;
+  letter-spacing: 0.2rem;
+}
+
+.repo-link {
+  font-size: 1.5rem;
+}
+
+.container-p1 {
+  width: 100%;
+  max-width: 1500px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+}
+
+.head {
+  padding-top: 10%;
+  font-size: 50px;
+  grid-column: span 1;
+  width: 130%;
+  grid-row: span 4;
+}
+
+/* WHAT WAS USED */
+.what-issue {
+  grid-column-start: col-1;
+  padding-bottom: 10%;
+}
+
+.what-head {
+  font-size: 50px;
+  position: relative;
+  padding-top: 10%;
+}
+
+.what-text {
+  position: relative;
+  float: left;
+  grid-column: col-1;
+  padding-top: 3%;
+}
+
+/* SUMMARY */
+
+.issue {
+  grid-column-start: col-2;
+  grid-row-start: 7;
+  position: relative;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.issue-text {
+  font-size: 50px;
+  position: relative;
+}
+
+.prob-text {
+  padding-top: 3%;
+}
+
+/* SOLUTION */
+
+.sol-head {
+  font-size: 50px;
+  position: relative;
+  grid-column: col-1;
+}
+
+.solution-div {
+  grid-column-start: col-1;
+  position: relative;
+  grid-row-start: 13;
+}
+
+.links {
+  grid-column-start: col-1;
+  padding-top: 5%;
+}
+
+.img {
+  position: relative;
+  grid-column: col-1;
+  grid-row-start: 20;
+}
+
+.img-1 {
+  width: 200%;
+  max-width: 1500px;
+}
+
+@media only screen and (max-width: 1005px) {
+  .p3-div {
+    height: 100%;
+    background-image: linear-gradient(#7c3d40, black 80%);
+    border-radius: 30px;
+    margin: auto;
+    width: 100%;
+    display: initial;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+  }
+
+  .head {
+    padding-top: 10%;
+    font-size: 50px;
+    width: 100% !important;
+  }
+
+  .what-issue {
+    width: 100%;
+    grid-row: auto;
+    padding: 0% 0% 10% 0%;
+  }
+
+  .issue {
+    display: block;
+    width: 100%;
+    padding: 0% 0% 5% 0% !important;
+  }
+
+  .issue-text {
+    padding-top: 20% !important;
+  }
+
+  .solution-div {
+    grid-row-start: 13;
+    width: 100%;
+    grid-row: auto;
+    padding: 0% 0% 5% 0%;
+  }
+
+  /* .img {
+    position: relative;
+  } */
+
+  .img-1 {
+    padding-top: 10%;
+    width: 100% !important;
+    height: auto;
+    object-fit: contain;
+  }
+}

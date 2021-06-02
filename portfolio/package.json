@@ -1,6 +1,6 @@
 {
-  "homepage": "https://seanmena.github.io/myportfolio",
   "name": "portfolio",
+  "homepage": "https://seanmena.github.io/myportfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
